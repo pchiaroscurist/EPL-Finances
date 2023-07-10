@@ -1,0 +1,13 @@
+---
+title: "About"
+---
+
+## About Me
+
+I'm Pranav Chivukula, a rising senior from Massachusetts. I love all kinds of sports, ranging from basketball and both kinds of football to Utimate Frisbee. I'm interesting in finance and data science.
+
+## Contact Information
+
+[Email](pranchivukula@gmail.com) \| [Github](https://github.com/pchiaroscurist) \| [Discord](bleeeeed)
+
+This project was completed with [Kane's Data Science Bootcamp](https://bootcamp.davidkane.info/).

@@ -1,0 +1,11 @@
+---
+title: "Sources"
+---
+
+https://www.transfermarkt.us/premier-league/einnahmenausgaben/wettbewerb/GB1/plus/0?ids=a&sa=&saison_id=2022&saison_id_bis=2022&nat=&pos=&altersklasse=&w_s=&leihe=&intern=0 -- premier league expenditure
+
+https://docs.google.com/spreadsheets/d/1ol-SqXnZtN_cotE6PqpF34svAO7Co_AtNOGcr3Qk12I/edit#gid=0 - google sheet
+
+https://www.skysports.com/premier-league-table/2022 - prem table 2022/2023
+
+https://www.skysports.com/premier-league-table/2021 - prem table 2021/2022

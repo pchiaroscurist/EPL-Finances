@@ -1,0 +1,24 @@
+---
+title: What is Chelsea Doing?
+execute:
+  echo: FALSE
+---
+
+```{r}
+ #| label: libraries
+ #| output: false
+ #| warning: false
+ #| message: false
+ #| include: false
+library(ggthemes)
+library(knitr)
+library(readr)
+```
+
+The English Premier League has existed in its current form since 1992, but never before has the world seen anything akin to Chelsea during the 2022/23 season. With Todd Boehly taking charge, the club had money to throw around, spending over 500,000,000 euros over the course of the season. However, Chelsea fell from 3rd in the league in the 2021/22 season to 12th in 2022/2023, with a loss of 29 points. It's clear by Chelsea's finish that spending money doesn't simply get you success. So the question is: what is the optimal amount of money to spend?
+
+```{r}
+#| label: expenditure vs points
+main_plot <- read_rds(file = "pt_change_plot.rds")
+main_plot
+```
