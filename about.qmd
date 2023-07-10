@@ -4,7 +4,7 @@ title: "About"
 
 ## About Me
 
-I'm Pranav Chivukula, a rising senior from Massachusetts. I love all kinds of sports, ranging from basketball and both kinds of football to Utimate Frisbee. I'm interesting in finance and data science.
+I'm Pranav Chivukula, a rising senior from Massachusetts. I love all kinds of sports, ranging from basketball and both kinds of football to Utimate Frisbee. I'm interesting in finance and data science. I hope to keep expanding this project soon and add data from previous years of the Premier League!
 
 ## Contact Information
 
