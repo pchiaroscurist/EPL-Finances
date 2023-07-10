@@ -2,7 +2,7 @@
 title: "Sources"
 ---
 
-[Transfer Markt](https://www.transfermarkt.us/premier-league/einnahmenausgaben/wettbewerb/GB1/plus/0?ids=a&sa=&saison_id=2022&saison_id_bis=2022&nat=&pos=&altersklasse=&w_s=&leihe=&intern=0 – premier league expenditure)
+[Transfer Markt](https://www.transfermarkt.us/premier-league/einnahmenausgaben/wettbewerb/GB1/plus/0?ids=a&sa=&saison_id=2022&saison_id_bis=2022&nat=&pos=&altersklasse=&w_s=&leihe=&intern=0%20–%20premier%20league%20expenditure)
 
 [Google Sheet with Transfer Markt Data](https://docs.google.com/spreadsheets/d/1ol-SqXnZtN_cotE6PqpF34svAO7Co_AtNOGcr3Qk12I/edit#gid=0)
 

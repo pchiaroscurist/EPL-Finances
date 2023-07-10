@@ -32,7 +32,8 @@ pp <- posterior_predict(fit, newdata = obs) |> as_tibble()
 plot <- pp |> ggplot(aes(x=`1`)) + geom_histogram(aes(y=after_stat(count/sum(count))), fill = "#034694", bins=25) +
   theme_classic() + scale_y_continuous(labels = scales::percent_format()) +
   scale_x_continuous(breaks=c(seq(-100, 100, 10))) +
-  labs(x= "Points Gained/Lost", y= "Probability", title = "Posterior for Expected Point Gain")
+  labs(x= "Points Gained/Lost", y= "Probability", title = "Posterior for Expected Point Gain",
+       caption = "Source: Transfermarkt & Skysports.com")
 
 write_rds(plot, "Chelsea_prediction.RDS")
 
@@ -45,5 +46,7 @@ pp <- posterior_predict(fit, newdata = obs) |> as_tibble()
 plot2 <- pp |> ggplot(aes(x=`1`)) + geom_histogram(aes(y=after_stat(count/sum(count))), fill = "#034694", bins=25) +
   theme_classic() + scale_y_continuous(labels = scales::percent_format()) +
   scale_x_continuous(breaks=c(seq(-100, 100, 10))) +
-  labs(x= "Points Gained/Lost", y= "Probability", title = "Posterior for Expected Point Gain WITHOUT Considering Chelsea")
+  labs(x= "Points Gained/Lost", y= "Probability", 
+       title = "Posterior for Expected Point Gain WITHOUT Considering Chelsea",
+       caption = "Data From: Transfermarkt & Skysports.com")
 write_rds(plot2, "Chelsea_prediction2.RDS")

@@ -49,6 +49,7 @@ plot <- info |> ggplot(aes(x=balance, y=ptChange)) + geom_image(aes(image = Badg
   scale_x_continuous(labels = scales::dollar_format(suffix="€",prefix="")) + theme_classic() |>
   labs(title = "Transfer Activity vs Change in Points from 2021/22 to 2022/23",
        subtitle = "Excludes Nottingham Forest, Fulham, and Bournemouth, who joined the EPL in 2022",
-       x = "Transfer Activity Balance", y = "Change in Points") + theme_classic()
+       x = "Transfer Activity Balance", y = "Change in Points", 
+       caption = "Source: Transfermarkt & Skysports.com") + theme_classic()
 
 write_rds(plot, "pt_change_plot.rds")
