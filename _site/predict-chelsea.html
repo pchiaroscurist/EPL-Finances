@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chelsea’s Got the Blues - About</title>
+<title>Chelsea’s Got the Blues - The Model</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,12 +84,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./predict-chelsea.html">
- <span class="menu-text">Model</span></a>
+    <a class="nav-link active" href="./predict-chelsea.html" aria-current="page">
+ <span class="menu-text">The Model</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -102,21 +102,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
-  <li><a href="#contact-information" id="toc-contact-information" class="nav-link" data-scroll-target="#contact-information">Contact Information</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">The Model</h1>
 </div>
 
 
@@ -131,17 +124,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="about-me" class="level2">
-<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
-<p>I’m Pranav Chivukula, a rising senior from Massachusetts. I love all kinds of sports, ranging from basketball and both kinds of football to Utimate Frisbee. I’m interesting in finance and data science.</p>
-</section>
-<section id="contact-information" class="level2">
-<h2 class="anchored" data-anchor-id="contact-information">Contact Information</h2>
-<p><a href="pranchivukula@gmail.com">Email</a> | <a href="https://github.com/pchiaroscurist">Github</a> | <a href="bleeeeed">Discord</a></p>
-<p>This project was completed with <a href="https://bootcamp.davidkane.info/">Kane’s Data Science Bootcamp</a>.</p>
+<div class="cell">
+
+</div>
+<p>Let’s start by asking this question. Let’s say Chelsea’s spending of 500 million euros didn’t devolve into one of the Premier League’s all-time collapses. How should it have worked out for the Blues?</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="predict-chelsea_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>To create this graph, I used the rstanarm package which allowed me to create a fit using stan_glm, which gave information on the relationship between a club’s transfer balance and the points they gained or lost. Using that fit, I told the model that the club had in theory spent 500 million euros and asked it to predict the points they would gain or lose.</p>
+<p>Based on the last season, the model dictates that the team would lose around 10-20 points from the previous year. I was skeptical though, due to Chelsea’s season being very weird for a normal team. So I removed Chelsea from the dataset we gave the model and asked to recalculate.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="predict-chelsea_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>After removing Chelsea from consideration, it becomes more evident that based on the last season, spending big doesn’t lead to big results. The model says while Chelsea’s season was unlikely, it wasn’t improbable. The team should have points, but probably not as many as they did.</p>
+<p>What does that say about how to manage a football team? It says you shouldn’t try to spend big to build a better team. Instead, focus on selling off the players you don’t need and bringing in more talent to support your talents. Oddly enough, this is what Chelsea is doing now.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
