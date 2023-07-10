@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "What is Chelsea Doing?",
+    "section": "",
+    "text": "The English Premier League has existed in its current form since 1992, but never before has the world seen anything akin to Chelsea during the 2022/23 season. With Todd Boehly taking charge, the club had money to throw around, spending over 500,000,000 euros over the course of the season. However, Chelsea fell from 3rd in the league in the 2021/22 season to 12th in 2022/2023, with a loss of 29 points. It’s clear by Chelsea’s finish that spending money doesn’t simply get you success. So the question is: what is the optimal amount of money to spend?"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m Pranav Chivukula, a rising senior from Massachusetts. I love all kinds of sports, ranging from basketball and both kinds of football to Utimate Frisbee. I’m interesting in finance and data science."
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "https://www.transfermarkt.us/premier-league/einnahmenausgaben/wettbewerb/GB1/plus/0?ids=a&sa=&saison_id=2022&saison_id_bis=2022&nat=&pos=&altersklasse=&w_s=&leihe=&intern=0 – premier league expenditure\nhttps://docs.google.com/spreadsheets/d/1ol-SqXnZtN_cotE6PqpF34svAO7Co_AtNOGcr3Qk12I/edit#gid=0 - google sheet\nhttps://www.skysports.com/premier-league-table/2022 - prem table 2022/2023\nhttps://www.skysports.com/premier-league-table/2021 - prem table 2021/2022"
+  },
+  {
+    "objectID": "about.html#contact-information",
+    "href": "about.html#contact-information",
+    "title": "About",
+    "section": "Contact Information",
+    "text": "Contact Information\nEmail | Github | Discord\nThis project was completed with Kane’s Data Science Bootcamp."
+  }
+]
