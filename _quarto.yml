@@ -4,11 +4,16 @@ project:
 website:
   title: "Chelsea's Got the Blues"
   navbar:
+    background: primary
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - predict-chelsea.qmd
+      - href: about.qmd
+        text: About Me
+      - href: predict-chelsea.qmd
+        text: Model's Prediction
+      - href: sources.qmd
+        text: Sources
 
 format:
   html:
