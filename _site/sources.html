@@ -85,11 +85,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./predict-chelsea.html">
- <span class="menu-text">The Model</span></a>
+ <span class="menu-text">Model’s Prediction</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./sources.html" aria-current="page">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://www.skysports.com/premier-league-table/2021">2021/22 Premier League Table</a></p>
 <section id="process" class="level2">
 <h2 class="anchored" data-anchor-id="process">Process</h2>
-<p>To start, I put the transfer markt data in a Google Sheet as with the skills I’ve learned so far, I was not able to get the needed data well. In the future, I want to find a way to get it directly but since it was the second table I wasn’t able to get it. I then scraped both the table for the 2021/22 and the 2022/23 Premier League seasons. The issue was, between Transfermarkt and the site I used for the tables, they spelled some of the teams differently. I had to change all ampersands to “and,” and delete all “FCs” and “AFCs.” Also from the Transfermarkt data, I created the “balance” variable which represented the total amount of money spent or gained from transfers.</p>
+<p>To start, I put the Transfermarkt data in a Google Sheet as with the skills I’ve learned so far, I was not able to get the needed data well. In the future, I want to find a way to get it directly but since it was the second table I wasn’t able to get it. I then scraped both the table for the 2021/22 and the 2022/23 Premier League seasons. The issue was, between Transfermarkt and the site I used for the tables, they spelled some of the teams differently. I had to change all ampersands to “and,” and delete all “FCs” and “AFCs.” Also from the Transfermarkt data, I created the “balance” variable which represented the total amount of money spent or gained from transfers.</p>
 <p>I then created an images tibble where I stored all the Premier League teams logos so they could be used in place of points. Once that was done, I merged the two standings, the financial table, and the images table. From there, I only kept the Points values from the standings, as I didn’t need the specifics of how the teams achieved their results. Once my final tibble was created, I used it as the basis of my code.</p>
 
 
