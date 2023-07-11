@@ -1,7 +1,7 @@
 library(googlesheets4)
 library(rvest)
-library(plotly)
 library("ggimage")
+library(tidyverse)
 gs4_deauth()
 transfer <- "https://docs.google.com/spreadsheets/d/1ol-SqXnZtN_cotE6PqpF34svAO7Co_AtNOGcr3Qk12I/edit#gid=0" |>
   read_sheet() |> mutate(Income = as.double(Income)) |>
@@ -53,3 +53,4 @@ plot <- info |> ggplot(aes(x=balance, y=ptChange)) + geom_image(aes(image = Badg
        caption = "Source: Transfermarkt & Skysports.com") + theme_classic()
 
 write_rds(plot, "pt_change_plot.rds")
+plot

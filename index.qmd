@@ -1,5 +1,5 @@
 ---
-title: What is Chelsea Doing?
+title: How is Chelsea Doing?
 execute:
   echo: FALSE
 ---

@@ -8,12 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About Me
       - href: predict-chelsea.qmd
         text: Model's Prediction
       - href: sources.qmd
         text: Sources
+      - href: about.qmd
+        text: About Me
 
 format:
   html:
