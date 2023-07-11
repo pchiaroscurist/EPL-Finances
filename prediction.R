@@ -35,6 +35,7 @@ plot <- pp |> ggplot(aes(x=`1`)) + geom_histogram(aes(y=after_stat(count/sum(cou
   labs(x= "Points Gained/Lost", y= "Probability", title = "Posterior for Expected Point Gain",
        caption = "Source: Transfermarkt & Skysports.com")
 
+mean(pp$`1`)
 write_rds(plot, "Chelsea_prediction.RDS")
 
 info2 <- table_22 |> left_join(transfer) |> left_join(table_21) |> drop_na() |> 
@@ -43,6 +44,9 @@ info2 <- table_22 |> left_join(transfer) |> left_join(table_21) |> drop_na() |>
 fit <- stan_glm(ptChange ~ balance, data = info, refresh = 0)
 obs <- tibble(balance = -500000000)
 pp <- posterior_predict(fit, newdata = obs) |> as_tibble()
+
+
+
 plot2 <- pp |> ggplot(aes(x=`1`)) + geom_histogram(aes(y=after_stat(count/sum(count))), fill = "#034694", bins=25) +
   theme_classic() + scale_y_continuous(labels = scales::percent_format()) +
   scale_x_continuous(breaks=c(seq(-100, 100, 10))) +
