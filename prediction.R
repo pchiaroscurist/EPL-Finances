@@ -35,7 +35,7 @@ plot <- pp |> ggplot(aes(x=`1`)) + geom_histogram(aes(y=after_stat(count/sum(cou
   labs(x= "Points Gained/Lost", y= "Probability", title = "Posterior for Expected Point Gain",
        caption = "Source: Transfermarkt & Skysports.com")
 
-mean(pp$`1`)
+write_rds(pp, "Chelsea_prediction_table.RDS")
 write_rds(plot, "Chelsea_prediction.RDS")
 
 info2 <- table_22 |> left_join(transfer) |> left_join(table_21) |> drop_na() |> 
@@ -53,4 +53,5 @@ plot2 <- pp |> ggplot(aes(x=`1`)) + geom_histogram(aes(y=after_stat(count/sum(co
   labs(x= "Points Gained/Lost", y= "Probability", 
        title = "Posterior for Expected Point Gain WITHOUT Considering Chelsea",
        caption = "Data From: Transfermarkt & Skysports.com")
+write_rds(pp, "Chelsea_prediction2_table.RDS")
 write_rds(plot2, "Chelsea_prediction2.RDS")

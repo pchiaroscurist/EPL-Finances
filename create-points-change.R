@@ -53,4 +53,3 @@ plot <- info |> ggplot(aes(x=balance, y=ptChange)) + geom_image(aes(image = Badg
        caption = "Source: Transfermarkt & Skysports.com") + theme_classic()
 
 write_rds(plot, "pt_change_plot.rds")
-plot

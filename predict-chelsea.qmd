@@ -20,15 +20,18 @@ Let's start by asking this question. Let's say Chelsea's spending of 500 million
 
 ```{r}
 first_plot <- read_rds(file = "Chelsea_prediction.rds")
-first_plot
+first_table <- read_rds(file = "Chelsea_prediction_table.rds")
+first_table
+first_plot 
 ```
 
 To create this graph, I used the rstanarm package which allowed me to create a fit using stan_glm, which gave information on the relationship between a club's transfer balance and the points they gained or lost. Using that fit, I told the model that the club had in theory spent 500 million euros and asked it to predict the points they would gain or lose.
 
-Based on the last season, the model dictates that the team would lose around 10-20 points from the previous year. I was skeptical though, due to Chelsea's season being very weird for a normal team. So I removed Chelsea from the dataset we gave the model and asked to recalculate.
+Based on the last season, the model dictates that the team would lose around 10-20 points from the previous year. I was skeptical though, due to Chelsea's season being very weird for a normal team. So I removed Chelsea from the dataset we gave the model and recalculated.
 
 ```{r}
 second_plot <- read_rds(file = "Chelsea_prediction2.rds")
+second_table <- read_rds(file = "Chelsea_prediction2_table.rds")
 second_plot
 ```
 

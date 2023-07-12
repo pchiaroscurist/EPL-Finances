@@ -133,12 +133,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Let’s start by asking this question. Let’s say Chelsea’s spending of 500 million euros didn’t devolve into one of the Premier League’s all-time collapses. How should it have worked out for the Blues?</p>
 <div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4,000 × 1
+      `1`
+    &lt;dbl&gt;
+ 1 -34.7 
+ 2 -32.6 
+ 3 -24.7 
+ 4  -4.69
+ 5  -8.48
+ 6 -22.0 
+ 7 -31.2 
+ 8  -5.35
+ 9  -7.73
+10 -26.0 
+# ℹ 3,990 more rows</code></pre>
+</div>
 <div class="cell-output-display">
 <p><img src="predict-chelsea_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>To create this graph, I used the rstanarm package which allowed me to create a fit using stan_glm, which gave information on the relationship between a club’s transfer balance and the points they gained or lost. Using that fit, I told the model that the club had in theory spent 500 million euros and asked it to predict the points they would gain or lose.</p>
-<p>Based on the last season, the model dictates that the team would lose around 10-20 points from the previous year. I was skeptical though, due to Chelsea’s season being very weird for a normal team. So I removed Chelsea from the dataset we gave the model and asked to recalculate.</p>
+<p>Based on the last season, the model dictates that the team would lose around 10-20 points from the previous year. I was skeptical though, due to Chelsea’s season being very weird for a normal team. So I removed Chelsea from the dataset we gave the model and recalculated.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="predict-chelsea_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
